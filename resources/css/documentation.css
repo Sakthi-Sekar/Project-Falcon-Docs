@@ -808,9 +808,9 @@ ul,
 /* DOWNLOAD BUTTON */
 
 .downloadLink {
-    background-color: DodgerBlue;
     border: none;
     color: white;
+    background-color: #168fae;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
@@ -818,5 +818,5 @@ ul,
 }
 
 .downloadLink:hover {
-    background-color: RoyalBlue;
+    background-color: DodgerBlue;
 }

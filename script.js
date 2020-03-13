@@ -1,4 +1,4 @@
-// <!--JS for read html file-->
+// <!--JS for read external html file-->
 
 $(".banner").each(function() {
     console.log('working');
@@ -8,8 +8,7 @@ $(".banner").each(function() {
     });
 });
 
-
-// <!-- OPEN CONTENT TAB-->
+// <!-- JS for OPEN CONTENT TAB-->
 
 function openTab(evt, Name) {
     var i, tabcontent, tablinks;
@@ -29,10 +28,7 @@ function openTab(evt, Name) {
 
 document.getElementById("defaultOpen").click();
 
-
-
 // <!--JS for ACCORDION-->
-
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -80,7 +76,6 @@ function showImg(obj) {
 
 // <!--JS for ADD ACTIVE CLASS TO THE CURRENT BUTTON-->
 
-
 // Add active class to the current button (highlight it)
 var header = document.getElementById("tabActive");
 var btns = header.getElementsByClassName("btn");
@@ -94,7 +89,7 @@ for (var i = 0; i < btns.length; i++) {
     });
 }
 
-
+//JS for scroll to top button
 
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -119,7 +114,7 @@ function topFunction() {
 }
 
 
-//Coming soon page
+//JS for Coming soon page
 
 // Set the date we're counting down to
 var countDownDate = new Date("Apr 17, 2021 15:37:25").getTime();
@@ -150,19 +145,19 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-//Redirect into another page using js
+//JS for redirecting into another page
+
 function myFunction() {
     //location.replace("html files/ui-project structure/config.html")
     window.open('html files/ui-project structure/config.html', '_blank');
 }
 
-//Read more & Read less button
+//JS for read more & Read less button
+
 function readMoreLess() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("Btn");
-
-
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
@@ -178,10 +173,9 @@ function readMoreLess() {
     }
 }
 
+// JQUERY for READ MORE AND LESS BUTTON
 
-//USING JQUERY READ MORE AND LESS BUTTON
 $(document).on("click", ".toggle-text-button", function() {
-
 
     if ($(this).text() == "Read More") {
         $(this).text("Read Less");
@@ -198,3 +192,10 @@ $(document).on("click", ".toggle-text-button", function() {
     }
 
 });
+
+//Alert box implementation
+
+function alertBox() {
+    alert("Click OK to download the file!");
+
+}
