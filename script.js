@@ -92,7 +92,7 @@ for (var i = 0; i < btns.length; i++) {
 //JS for scroll to top button
 
 //Get the button
-var mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("topBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() { scrollFunction() };
@@ -165,6 +165,7 @@ function readMoreLess() {
         moreText.style.display = "none";
         btnText.scrollIntoView(0, 0);
 
+
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
@@ -196,6 +197,24 @@ $(document).on("click", ".toggle-text-button", function() {
 //Alert box implementation
 
 function alertBox() {
-    alert("Click OK to download the file!");
+    if (window.confirm("Want to download the file?")) {
+        window.open("FalconDocument/Falcon UI - User Guide.pdf", "Thank You");
+    } else {
+        window.confirm.close();
+    }
 
+}
+
+//Sign up/in
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.scrollTop = window.scrollTo(0, 0);
+        modal.style.display = "none";
+
+    }
 }

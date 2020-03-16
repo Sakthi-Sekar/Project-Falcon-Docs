@@ -624,7 +624,7 @@ br {
 
 /*--Scroll to top button--*/
 
-#myBtn {
+#topBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -640,7 +640,7 @@ br {
     border-radius: 45%;
 }
 
-#myBtn:hover {
+#topBtn:hover {
     background-color: #555;
 }
 
@@ -819,4 +819,146 @@ ul,
 
 .downloadLink:hover {
     background-color: DodgerBlue;
+}
+
+
+/*---SIGN UP---*/
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Sign up button */
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 45%;
+    cursor: pointer;
+}
+
+
+/* Add padding to container elements */
+
+.form-container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto auto auto auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.signupbtn,
+.cancelbtn {
+    margin: 8px 0;
+}
+
+.signupbtn,
+.cancelbtn:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    margin: 8px 8px;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 100px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 50%;
+        cursor: pointer;
+    }
 }
