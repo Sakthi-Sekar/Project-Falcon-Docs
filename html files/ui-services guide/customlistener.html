@@ -7,7 +7,7 @@
         <h2>CustomListener</h2>
         <hr>
         <h3>List of Methods</h3>
-        <ul>
+        <ul class="count">
             <li><a href="#afterinvocation">public void afterInvocation(IInvokedMethod method, ITestResult result)</a>
             </li>
             <li><a href="#beforeinvocation">public void beforeInvocation(IInvokedMethod method,
@@ -26,10 +26,8 @@
                 <li><b>Method Name:</b></li>
                 <h4>public void afterInvocation(IInvokedMethod method, ITestResult result)</h4>
                 <li><b>Purpose:</b></li>
-                <p>This method invoke after configuration method(@before and @after).It will check invoked method is
-                    configuration method or not if not then it will create a failure message with all failures and stack
-                    trace
-                    if it is configuration method then it will check assertion failure and verification failure.</p>
+                <p>This method invoke after configuration method(@before and @after).It will check invoked method is configuration method or not if not then it will create a failure message with all failures and stack trace if it is configuration method
+                    then it will check assertion failure and verification failure.</p>
                 <li><b>Returns:</b></li>
                 <p>Returns nothing</p>
                 <li><b>Usage:</b></li>
@@ -42,10 +40,8 @@
                 <li><b>Method Name:</b></li>
                 <h4>public void beforeInvocation(IInvokedMethod method, ITestResult result)</h4>
                 <li><b>Purpose:</b></li>
-                <p>This method invoke before configuration method (@before and @after). It will check invoked method is
-                    configuration method or not if not then it will create a failure message with all failures and stack
-                    trace
-                    if it is configuration method then it will check assertion failure and verification failure.</p>
+                <p>This method invoke before configuration method (@before and @after). It will check invoked method is configuration method or not if not then it will create a failure message with all failures and stack trace if it is configuration method
+                    then it will check assertion failure and verification failure.</p>
                 <li><b>Returns:</b></li>
                 <p>Returns nothing</p>
                 <li><b>Usage:</b></li>
@@ -71,9 +67,7 @@
                 <li><b>Method Name:</b></li>
                 <h4>private void createJIRABug(ITestResult result)</h4>
                 <li><b>Purpose:</b></li>
-                <p>This method will create JIRA bug after failure.If you want to create JIRA Bug. Please set value of
-                    key
-                    'automatic.bug.creation' to 'true' in config.properties file otherwise it will not create JIRA bug.
+                <p>This method will create JIRA bug after failure.If you want to create JIRA Bug. Please set value of key 'automatic.bug.creation' to 'true' in config.properties file otherwise it will not create JIRA bug.
                 </p>
                 <li><b>Returns:</b></li>
                 <p>Returns nothing</p>

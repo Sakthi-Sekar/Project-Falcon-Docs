@@ -197,22 +197,19 @@ $(document).on("click", ".toggle-text-button", function() {
 //Alert box implementation
 
 function alertBox() {
-    if (window.confirm("Want to download the file?")) {
-        window.open("FalconDocument/Falcon UI - User Guide.pdf", "Thank You");
-    } else {
-        window.confirm.close();
-    }
+    alert("Want to download the file?");
+
 
 }
 
 //Sign up/in
 
 // Get the modal
-var modal = document.getElementById('id01');
+var form = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == form) {
         modal.scrollTop = window.scrollTo(0, 0);
         modal.style.display = "none";
 

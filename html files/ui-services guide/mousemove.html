@@ -7,7 +7,7 @@
         <h2>MouseMove Class</h2>
         <hr>
         <h3>List of Methods</h3>
-        <ul>
+        <ul class="count">
             <li><a href="#clickandhold">clickAndHold(WebElement)(boolean)</a></li>
             <li><a href="#draganddrop">dragAndDrop(WebElement, WebElement)(boolean)</a></li>
             <li><a href="#draganddropby">dragAndDropBy(WebElement, int ,int)(boolean)</a></li>
@@ -44,8 +44,7 @@
                 <li><b>Method Name:</b></li>
                 <h4>public boolean dragAndDrop(WebElement from, WebElement to)</h4>
                 <li><b>Purpose :</b></li>
-                <p>This method is perform click and hold source element then drag element and move it into another
-                    element.
+                <p>This method is perform click and hold source element then drag element and move it into another element.
                 </p>
 
                 <li><b>Parameters:</b></li>
@@ -73,20 +72,15 @@
                 <h4>public boolean dragAndDropBy(WebElement element, int x ,int y)</h4>
                 <li><b>Purpose:</b></li>
                 <ul>
-                    <li>This method performs click and hold the source element then move it to destination element by X
-                        and
-                        Y
-                        offset.</li>
-                    <li>You will have to pass in the element that you want to move and then the x and y offset that you
-                        want
-                        to move it by.</li>
+                    <li>This method performs click and hold the source element then move it to destination element by X and Y offset.
+                    </li>
+                    <li>You will have to pass in the element that you want to move and then the x and y offset that you want to move it by.</li>
                 </ul>
                 <li><b>Parameters:</b></li>
                 <p>This method having three Parameters:</p>
                 <ul>
                     <li>WebElement- It holds identification of web element.</li>
-                    <li>Offset X and Offset Y- X and Y are padding value of web element where we have to move the
-                        element.
+                    <li>Offset X and Offset Y- X and Y are padding value of web element where we have to move the element.
                     </li>
                 </ul>
                 <li><b>Returns:</b></li>
@@ -136,8 +130,7 @@
                 <li><b>Parameters:</b></li>
                 <p>This method having one parameter:</p>
                 <ul>
-                    <li>WebElement- It contains identification of that element where we have to release the mouse
-                        button.
+                    <li>WebElement- It contains identification of that element where we have to release the mouse button.
                     </li>
                 </ul>
                 <li><b>Returns:</b></li>
@@ -157,8 +150,7 @@
                 <h4>setDriverForMouseMove(WebDriver driver)</h4>
                 <li><b>Purpose:</b></li>
                 <ul>
-                    <li>This method accepts reference variable of WebDriver Interface, which will initialize to
-                        FirefoxDriver or InternetExplorerDriver or the ChromeDriver class constructor.</li>
+                    <li>This method accepts reference variable of WebDriver Interface, which will initialize to FirefoxDriver or InternetExplorerDriver or the ChromeDriver class constructor.</li>
                     <li>This method is use to refer current instance variable.</li>
                 </ul>
                 <li><b>Returns:</b></li>
