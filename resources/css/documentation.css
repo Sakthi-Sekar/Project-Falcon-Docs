@@ -1013,3 +1013,51 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.8;
 }
+
+
+/* Feedback(Testimonials) */
+
+.testimonials-container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+}
+
+.testimonials-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.testimonials-container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.testimonials-container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+input[type=button]:hover {
+    opacity: 0.8;
+    display: inline-block;
+}
+
+.user-interface input[type=text] {
+    display: inline-block;
+}
+
+@media (max-width: 500px) {
+    .container {
+        text-align: center;
+    }
+    .testimonials-container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}

@@ -228,7 +228,7 @@ function checkKeycode(e) {
         keycode = e.which;
 
     // Mozilla firefox
-    if ($.browser.mozilla) {
+    if ($.browser.gecko) {
         if (keycode == 116 || (e.ctrlKey && keycode == 82)) {
             if (e.preventDefault) {
                 e.preventDefault();
